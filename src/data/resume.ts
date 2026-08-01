@@ -6,7 +6,7 @@ export const profile = {
   location: "Puttur, Karnataka, India",
   phone: "9148630047",
   email: "nidhinatesh0047@gmail.com",
-  linkedin: "https://linkedin.com/in/nidhin",
+  linkedin: "https://www.linkedin.com/in/nidhinatesh",
   github: "https://github.com/Nidhi-1235",
   githubUser: "Nidhi-1235",
 };
