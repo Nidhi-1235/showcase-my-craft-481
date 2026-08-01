@@ -162,7 +162,7 @@ function Index() {
             <a href={`tel:${profile.phone}`} className="hover:text-glow">
               +91 {profile.phone}
             </a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="hover:text-glow">
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-glow">
               LinkedIn
             </a>
             <a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-glow">
