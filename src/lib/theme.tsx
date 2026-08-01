@@ -52,7 +52,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       const raw = window.localStorage.getItem(STORAGE_KEY);
-      if (raw) setThemeState({ ...DEFAULTS, ...(JSON.parse(raw) as Partial<ThemeState>) });
+      if (raw) {
+        const parsed = JSON.parse(raw) as Partial<ThemeState>;
+        setThemeState({ ...DEFAULTS, ...parsed });
+      }
     } catch {
       /* ignore malformed storage */
     }
