@@ -139,30 +139,7 @@
   animation: rise-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-@keyframes spin-360 {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-
-@utility spin-stage {
-  transform-style: preserve-3d;
-  backface-visibility: visible;
-  will-change: transform;
-}
-
-@utility spin-360 {
-  animation: spin-360 14s linear infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .spin-360 {
-    animation: none;
-  }
-}
+/* ---- Theme control palettes ---- */
 
 /* ---- Theme control palettes ---- */
 [data-palette="emerald"] {

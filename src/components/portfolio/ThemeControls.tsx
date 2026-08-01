@@ -3,7 +3,7 @@ import { heroLayouts, palettes, useTheme } from "@/lib/theme";
 
 export function ThemeControls() {
   const [open, setOpen] = useState(false);
-  const { palette, fontScale, heroLayout, spin, setTheme, reset } = useTheme();
+  const { palette, fontScale, heroLayout, setTheme, reset } = useTheme();
 
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
@@ -77,16 +77,6 @@ export function ThemeControls() {
               ))}
             </div>
           </fieldset>
-
-          <label className="mt-4 flex items-center justify-between text-xs font-medium text-muted-foreground">
-            Rotate photo 360°
-            <input
-              type="checkbox"
-              checked={spin}
-              onChange={(e) => setTheme({ spin: e.target.checked })}
-              className="h-4 w-4 accent-[var(--color-primary)]"
-            />
-          </label>
 
           <button
             type="button"

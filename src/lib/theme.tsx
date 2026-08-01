@@ -29,14 +29,12 @@ export type ThemeState = {
   palette: PaletteId;
   fontScale: number;
   heroLayout: HeroLayoutId;
-  spin: boolean;
 };
 
 const DEFAULTS: ThemeState = {
   palette: "midnight",
   fontScale: 1,
   heroLayout: "split",
-  spin: true,
 };
 
 const STORAGE_KEY = "portfolio-theme";
@@ -54,7 +52,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       const raw = window.localStorage.getItem(STORAGE_KEY);
-      if (raw) setThemeState({ ...DEFAULTS, ...(JSON.parse(raw) as Partial<ThemeState>) });
+      if (raw) {
+        const parsed = JSON.parse(raw) as Partial<ThemeState>;
+        setThemeState({ ...DEFAULTS, ...parsed });
+      }
     } catch {
       /* ignore malformed storage */
     }
