@@ -3,7 +3,7 @@ import { profile } from "@/data/resume";
 import { useTheme } from "@/lib/theme";
 
 export function Hero() {
-  const { heroLayout, spin } = useTheme();
+  const { heroLayout } = useTheme();
   const centered = heroLayout === "centered";
   const spotlight = heroLayout === "spotlight";
 
@@ -26,9 +26,7 @@ export function Hero() {
         alt={`Portrait of ${profile.name}`}
         width={854}
         height={1280}
-        className={`spin-stage relative w-full bg-transparent object-contain drop-shadow-[0_25px_60px_color-mix(in_oklab,var(--color-primary)_45%,transparent)] ${
-          spin ? "spin-360" : ""
-        }`}
+        className="relative w-full bg-transparent object-contain drop-shadow-[0_25px_60px_color-mix(in_oklab,var(--color-primary)_45%,transparent)]"
       />
     </div>
   );
