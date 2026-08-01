@@ -8,10 +8,15 @@ export const reposQueryOptions = {
   staleTime: 10 * 60_000,
 };
 
+const HIDDEN = ["portfolio", "gitintro", "git-intro", "git_intro"];
+
 export function Projects() {
   const { data } = useSuspenseQuery(reposQueryOptions);
+  const repos = data.repos.filter(
+    (r) => !HIDDEN.includes(r.name.toLowerCase().replace(/\s+/g, "")),
+  );
 
-  if (data.error || data.repos.length === 0) {
+  if (data.error || repos.length === 0) {
     return (
       <p className="text-muted-foreground">
         {data.error ?? "No public repositories to show yet."} You can browse everything on{" "}
@@ -26,7 +31,7 @@ export function Projects() {
   return (
     <>
       <ul className="grid gap-5 md:grid-cols-2">
-        {data.repos.map((repo) => (
+        {repos.map((repo) => (
           <li
             key={repo.id}
             className="group relative rounded-2xl border border-border bg-card/70 p-6 transition hover:border-glow/70 hover:bg-card"
