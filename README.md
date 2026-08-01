@@ -1,26 +1,70 @@
-# My Digital Showcase
+# 🌐 Nidhi N – Portfolio
 
-i want to create a best attractive portfolio based on this resume,and i have more projects in github so add that too,i want to add my photo in front page
+Welcome to my personal portfolio! This website showcases my projects, technical skills, certifications, and achievements as a Computer Science (Data Science) student and aspiring AI & Full-Stack Developer.
 
-This project was built with [Lovable](https://lovable.dev).
+## 🚀 Live Portfolio
+🔗 https://showcase-my-craft-481.lovable.app
 
-**Live app**: https://showcase-my-craft-481.lovable.app
+## 👩‍💻 About Me
 
-## Build with Lovable
+I am a Computer Science (Data Science) undergraduate with a strong foundation in software development, data structures, algorithms, artificial intelligence, and full-stack web development. I enjoy building intelligent applications that solve real-world problems.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/0c6712e5-c5e5-4a78-9e77-42ee1cae55be).
+## 🛠️ Technologies Used
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- React
+- TypeScript
+- Vite
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub
+- Lovable
 
-## Development
+## 📂 Featured Projects
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### 🚦 Road Traffic Pattern Recognition System
+- Built an AI-powered traffic prediction system using machine learning.
+- Technologies: Python, TensorFlow, Flask, Pandas, NumPy, Scikit-learn.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+### 💊 SmartMediCare (Ongoing)
+- AI-powered medicine assistance application for visually impaired users.
+- Features OCR, NLP, voice guidance, medicine reminders, and expiry alerts.
+- Technologies: Flutter, Firebase, Python, OpenCV, OCR, NLP.
+
+### 🎓 Student Performance Prediction
+- Responsive web application for predicting student performance.
+- Technologies: React, TypeScript, Vite, TanStack Start.
+
+## 🎓 Education
+
+**Bachelor of Engineering – Computer Science (Data Science)**  
+Vivekananda College of Engineering and Technology, Puttur (VTU)
+
+CGPA: **8.13/10**
+
+## 📜 Certifications
+
+- Data Science – Elewayt
+- Power BI Certification
+- Deloitte Data Analytics Job Simulation (Forage)
+- Deloitte GenAI Powered Data Analytics Job Simulation (Forage)
+- Infosys Springboard Certifications
+
+## 🏆 Achievements
+
+- AI Healthcare Solution – Startup Pitch Event
+- SOLVE-A-THON 1.0 – 24-Hour Hackathon
+- ISTE Karnataka State Startup Pitch Challenge
+- CODE MANTHAN'25 Hackathon
+
+## 📫 Contact
+
+📧 Email: nidhinatesh0047@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/nidhinatesh
+
+💻 GitHub: https://github.com/nidhi-1235
+
+---
+
+⭐ Thank you for visiting my portfolio! Feel free to explore my projects and connect with me.
