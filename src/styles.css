@@ -165,6 +165,8 @@
 }
 
 /* ---- Theme control palettes ---- */
+
+/* ---- Theme control palettes ---- */
 [data-palette="emerald"] {
   --background: oklch(0.14 0.03 175);
   --foreground: oklch(0.96 0.01 170);
