@@ -4,6 +4,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/portfolio/Hero";
 import { Section } from "@/components/portfolio/Section";
 import { Projects, reposQueryOptions } from "@/components/portfolio/Projects";
+import { ThemeControls } from "@/components/portfolio/ThemeControls";
+import { ThemeProvider } from "@/lib/theme";
 import { achievements, certifications, education, profile, skillGroups } from "@/data/resume";
 
 const TITLE = "Nidhi N — AI & Full-Stack Developer Portfolio";
@@ -50,8 +52,10 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
+    <ThemeProvider>
     <main className="min-h-screen bg-background">
       <Hero />
+      <ThemeControls />
 
       <Section id="about" eyebrow="About" title="A developer who ships end to end">
         <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">{profile.summary}</p>
@@ -172,5 +176,6 @@ function Index() {
         </div>
       </footer>
     </main>
+    </ThemeProvider>
   );
 }
