@@ -66,7 +66,7 @@ export function Hero() {
         <a
           href={profile.linkedin}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition hover:border-glow hover:text-glow"
         >
           LinkedIn
