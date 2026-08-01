@@ -29,14 +29,12 @@ export type ThemeState = {
   palette: PaletteId;
   fontScale: number;
   heroLayout: HeroLayoutId;
-  spin: boolean;
 };
 
 const DEFAULTS: ThemeState = {
   palette: "midnight",
   fontScale: 1,
   heroLayout: "split",
-  spin: true,
 };
 
 const STORAGE_KEY = "portfolio-theme";
