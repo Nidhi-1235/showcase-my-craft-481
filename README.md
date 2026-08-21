@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This website showcases my projects, technical skills, certifications, and achievements as a Computer Science (Data Science) student and aspiring AI & Full-Stack Developer.
 
 ## 🚀 Live Portfolio
-🔗 https://showcase-my-craft-481.lovable.app
+🔗 [showcase-my-craft.vercel.app ](showcase-my-craft.vercel.app   )  
 
 ## 👩‍💻 About Me
 
